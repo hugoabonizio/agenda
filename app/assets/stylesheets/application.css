@@ -15,3 +15,6 @@
 body {
   padding-top: 90px;
 }
+.uppercase {
+  text-transform: uppercase;
+}

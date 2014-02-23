@@ -16,3 +16,15 @@
 //= require best_in_place
 //= require best_in_place.purr
 //= require_tree .
+
+$(document).ready(function(){
+  
+  $('#context').hide();
+  $('#context_selector').on('change', function(){
+    if ($('#context_selector option:selected').val() == "") {
+      $('#context').show();
+      $('#context_selector').hide();
+    }
+  });
+  
+});

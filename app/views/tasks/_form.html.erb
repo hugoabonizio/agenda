@@ -17,7 +17,20 @@
   </div>
   <div class="field">
     <%= f.label :context %><br>
-    <%= f.text_field :context %>
+    <select name="task[context]" id="context_selector">
+      <option value="formais">Formais</option>
+      <option value="bd">B.D.</option>
+      <option value="redes">Redes</option>
+      <option value="SO">S.O.</option>
+      <option value="compiladores">Compiladores</option>
+      <option value="teoria">Teoria</option>
+      <option value="">Outro</option>
+    </select>
+    <%= f.text_field :context, id: 'context' %>
+  </div>
+  <div class="field">
+    <%= f.label :pririty %><br>
+    <input type="range" name="task[pririty]" min="1" max="100">
   </div>
   <div class="actions">
     <%= f.submit %>
