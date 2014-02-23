@@ -1,0 +1,20 @@
+<table class="table">
+  <tbody>
+    <% @task_list.each do |ctx| %>
+      <tr>
+        <th><h3><%= ctx[0] %></h3></th>
+        <th></th>
+      </tr>
+      <% ctx[1].each do |task| %>
+        <tr>
+          <td><%= best_in_place task, :description %></td>
+          <td>
+            <a data-confirm="Are you sure?" data-method="delete" href="/tasks/<%= task.id %>" rel="nofollow">
+              <div class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove"></span></div>
+            </a>
+          </td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>

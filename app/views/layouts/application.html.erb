@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agenda</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Hurgonizator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to 'New Task', new_task_path %></li>
+            <li><a  data-toggle="modal" href="#horario">Horário</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  
+  <div class="container">
+    <%= yield %>
+  </div>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="horario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Horário</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <tr>
+              <td>Redes</td>
+              <td>Engenharia</td>
+              <td>Engenharia</td>
+              <td>Teoria Comp</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>B.D.</td>
+              <td>Redes</td>
+              <td>Empreend.</td>
+              <td>Compiladores</td>
+              <td>Compiladores</td>
+            </tr>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>S.O.</td>
+              <td>Teoria Comp</td>
+              <td>Empreend.</td>
+              <td>S.O.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>B.D.</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>

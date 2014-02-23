@@ -1,0 +1,19 @@
+<div class="alert alert-success"><%= notice %></div>
+
+<p>
+  <strong>Description:</strong>
+  <%= @task.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @task.status %>
+</p>
+
+<p>
+  <strong>Context:</strong>
+  <%= @task.context %>
+</p>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>
