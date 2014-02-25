@@ -7,6 +7,7 @@ gem 'rails', '4.0.0'
 
 gem 'best_in_place', github: 'bernat/best_in_place'
 
+gem 'thin'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
