@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
-#ruby "2.1.0", :engine => "rbx", :engine_version => "2.1.1"
-ruby '2.0.0'
+group :production do
+  ruby "2.1.0", :engine => "rbx", :engine_version => "2.1.1"
+end
+group :development do
+  ruby '2.0.0'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
