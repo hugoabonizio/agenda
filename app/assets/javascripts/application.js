@@ -18,13 +18,12 @@
 //= require_tree .
 
 $(document).ready(function(){
-  
-  $('#context').hide();
+  /*$('#context').hide();
   $('#context_selector').on('change', function(){
     if ($('#context_selector option:selected').val() == "") {
       $('#context').show();
       $('#context_selector').hide();
     }
-  });
+  });*/
   
 });
