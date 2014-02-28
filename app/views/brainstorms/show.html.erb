@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Idea:</strong>
+  <%= @brainstorm.idea %>
+</p>
+
+<p>
+  <strong>Annotations:</strong>
+  <%= @brainstorm.annotations %>
+</p>
+
+<%= link_to 'Edit', edit_brainstorm_path(@brainstorm) %> |
+<%= link_to 'Back', brainstorms_path %>

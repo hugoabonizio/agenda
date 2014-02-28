@@ -1,0 +1,15 @@
+<h1>Listing brainstorms</h1>
+
+<table>
+  <tbody>
+    <% @brainstorms.each do |brainstorm| %>
+      <tr>
+        <td><%= link_to brainstorm.idea, brainstorm %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Brainstorm', new_brainstorm_path %>
