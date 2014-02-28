@@ -1,5 +1,7 @@
 Agenda::Application.routes.draw do
   
+  resources :copypastes
+
   resources :brainstorms
 
   root 'tasks#index'

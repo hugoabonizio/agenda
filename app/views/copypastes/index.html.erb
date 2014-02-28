@@ -1,0 +1,27 @@
+<h1>Listing copypastes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @copypastes.each do |copypaste| %>
+      <tr>
+        <td><%= copypaste.content %></td>
+        <td><%= link_to 'Show', copypaste %></td>
+        <td><%= link_to 'Edit', edit_copypaste_path(copypaste) %></td>
+        <td><%= link_to 'Destroy', copypaste, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Copypaste', new_copypaste_path %>
