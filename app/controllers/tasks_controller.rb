@@ -1,5 +1,7 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  
+  caches_page :index
 
   # GET /tasks
   # GET /tasks.json
@@ -28,6 +30,7 @@ class TasksController < ApplicationController
     task_params[:status] = 'undone'
     @task = Task.new(task_params)
     @task.save
+    expire_page action: 'index'
     redirect_to root_path
   end
 
