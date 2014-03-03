@@ -7,7 +7,7 @@ gem 'rails', '4.0.0'
 
 gem 'best_in_place', github: 'bernat/best_in_place'
 
-gem 'puma'
+gem 'unicorn'
 
 gem 'actionpack-page_caching'
 

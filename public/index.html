@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agenda</title>
+  <link data-turbolinks-track="true" href="/assets/application-86b451e1f6e796e3cfbf893ec15cb167.css" media="all" rel="stylesheet" />
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <script data-turbolinks-track="true" src="/assets/application-922cefc189eaf3f4f26590686c9a9a8b.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="0wQhEAlQPT3Yk+zc/gq3QvWu4qKY9DktrsUpE/t3MUE=" name="csrf-token" />
+</head>
+<body>
+  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Hurgonizator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/tasks/new">New Task</a></li>
+            <li><a  data-toggle="modal" href="#horario">Horário</a></li>
+            <li><a href="/brainstorms">Brainstorm</a></li>
+            <li><a href="/copypastes">Copy &amp; Paste</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  
+  <div class="container">
+    <table class="table">
+  <tbody>
+      <tr>
+        <th><h3 class="uppercase">formais</h3></th>
+        <th></th>
+      </tr>
+        <tr>
+          <td><span class='best_in_place' id='best_in_place_task_5_description' data-url='/tasks/5' data-object='task' data-attribute='description' data-type='input'>fazer a atividade e ler o livro de formais</span></td>
+          <td>
+            <a data-confirm="Are you sure?" data-method="delete" href="/tasks/5" rel="nofollow">
+              <div class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove"></span></div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td><span class='best_in_place' id='best_in_place_task_7_description' data-url='/tasks/7' data-object='task' data-attribute='description' data-type='input'>renovar o livro</span></td>
+          <td>
+            <a data-confirm="Are you sure?" data-method="delete" href="/tasks/7" rel="nofollow">
+              <div class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove"></span></div>
+            </a>
+          </td>
+        </tr>
+      <tr>
+        <th><h3 class="uppercase">bd</h3></th>
+        <th></th>
+      </tr>
+        <tr>
+          <td><span class='best_in_place' id='best_in_place_task_11_description' data-url='/tasks/11' data-object='task' data-attribute='description' data-type='input'>ler/xerocar o livro</span></td>
+          <td>
+            <a data-confirm="Are you sure?" data-method="delete" href="/tasks/11" rel="nofollow">
+              <div class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove"></span></div>
+            </a>
+          </td>
+        </tr>
+  </tbody>
+</table>
+
+  </div>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="horario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Horário</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <tr>
+              <td>Redes</td>
+              <td>Engenharia</td>
+              <td>Engenharia</td>
+              <td>Teoria Comp</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>B.D.</td>
+              <td>Redes</td>
+              <td>Empreend.</td>
+              <td>Compiladores</td>
+              <td>Compiladores</td>
+            </tr>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>S.O.</td>
+              <td>Teoria Comp</td>
+              <td>Empreend.</td>
+              <td>S.O.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>B.D.</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>
